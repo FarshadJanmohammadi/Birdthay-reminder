@@ -14,11 +14,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgba(240, 137, 177, 1);
   font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
 }
 
 .container {
@@ -29,9 +32,8 @@ body {
   align-items: center;
 }
 .main-section {
-  box-sizing: border-box;
   width: 500px;
-  height: 600px;
+  height: auto;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
@@ -40,11 +42,108 @@ body {
 }
 
 .container-title h1 {
-  font-family: "Mulish", sans-serif;
   font-size: 2em;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 33px;
   letter-spacing: 0px;
   text-align: left;
+  margin-bottom: 40px;
+}
+.profile-container {
+  height: 475px;
+  overflow-y: auto;
+  /* scrollbar-width: thin;
+  scrollbar-color: #e56ed2 #fe69a3; */
+}
+.profile-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.profile-container::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.profile-container::-webkit-scrollbar-thumb {
+  background-color: #fe69a3;
+  border-radius: 20px;
+}
+
+.profile {
+  background-color: #ffffff;
+  display: flex;
+  margin-bottom: 23px;
+  padding: 7px;
+  transition: background-color 120ms ease-in-out;
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile:hover {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.hidden {
+  display: none;
+}
+
+.close .profile-image {
+  display: inline-flex;
+  margin-right: 10px;
+}
+.profile-image img {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+}
+
+.profile-title {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.profile-title h1 {
+  font-size: 1.1em;
+
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(16, 14, 20, 1);
+  margin-bottom: 5px;
+}
+.profile-title p {
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(93, 89, 102, 1);
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-section button {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  padding: 22px 120px;
+  width: 80%;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #fe69a3, #e56ed2);
+}
+
+.button-section button:hover {
+  background-image: linear-gradient(to left, #fe69a3, #e56ed2);
 }
