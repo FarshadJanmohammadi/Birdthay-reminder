@@ -54,8 +54,6 @@ body {
 .profile-container {
   height: 475px;
   overflow-y: auto !important;
-  /* scrollbar-width: thin;
-  scrollbar-color: #e56ed2 #fe69a3; */
 }
 .profile-container::-webkit-scrollbar {
   width: 15px;
@@ -158,7 +156,7 @@ body {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 0px;
-  text-align: left;
+
   color: #ffffff;
   padding: 22px 120px;
   width: 80%;
@@ -168,4 +166,11 @@ body {
 
 .button-section button:hover {
   background-image: linear-gradient(to left, #fe69a3, #e56ed2);
+}
+
+@media screen and (max-width: 570px) {
+  .button-section button {
+    padding: 22px 60px;
+    t
+
 }
