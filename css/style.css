@@ -50,14 +50,15 @@ body {
   text-align: left;
   margin-bottom: 40px;
 }
+
 .profile-container {
   height: 475px;
-  overflow-y: auto;
+  overflow-y: auto !important;
   /* scrollbar-width: thin;
   scrollbar-color: #e56ed2 #fe69a3; */
 }
 .profile-container::-webkit-scrollbar {
-  width: 12px;
+  width: 15px;
 }
 
 .profile-container::-webkit-scrollbar-track {
@@ -72,13 +73,16 @@ body {
 .profile {
   background-color: #ffffff;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 23px;
   padding: 7px;
-  transition: background-color 120ms ease-in-out;
-  width: 80%;
+  transition: background-color 50ms ease-in-out;
+  width: 90%;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .profile:hover {
   background-color: rgba(0, 0, 0, 0.212);
 }
@@ -87,9 +91,10 @@ body {
   display: none;
 }
 
-.close .profile-image {
+.profile-image {
   display: inline-flex;
   margin-right: 10px;
+  flex-grow: 0.5;
 }
 .profile-image img {
   width: 54px;
@@ -100,6 +105,8 @@ body {
 .profile-title {
   display: inline-flex;
   flex-direction: column;
+
+  flex-grow: 1;
 }
 
 .profile-title h1 {
@@ -120,6 +127,21 @@ body {
   letter-spacing: 0px;
   text-align: left;
   color: rgba(93, 89, 102, 1);
+}
+.close {
+  align-self: center;
+  flex-grow: 4;
+  text-align: right;
+  visibility: hidden;
+  transition: visibility;
+}
+
+.close span {
+  font-size: large;
+  background-color: rgb(238, 22, 22);
+  color: white;
+  padding: 5px 9px;
+  border-radius: 100%;
 }
 
 .button-section {

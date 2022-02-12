@@ -11,13 +11,10 @@
     <div class="container">
       <section class="main-section">
         <div class="container-title">
-          <h1>10 birthdays today</h1>
+          <h1><span id="counter"></span> birthdays today</h1>
         </div>
         <div class="profile-container">
-          <div class="profile profile-one">
-            <div class="close">
-              <span>&#10006</span>
-            </div>
+          <div onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)" class="profile profile-one">
             <div class="profile-image">
               <img src="./css/images/profile1.png" alt="" />
             </div>
@@ -25,8 +22,11 @@
               <h1>Bertie Yates</h1>
               <p>29 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-two">
+          <div class="profile profile-two" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile2.png" alt="" />
             </div>
@@ -34,8 +34,11 @@
               <h1>Hester Hogan</h1>
               <p>32 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-three">
+          <div class="profile profile-three" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile3.png" alt="" />
             </div>
@@ -43,8 +46,11 @@
               <h1>Larry Little</h1>
               <p>36 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-four">
+          <div class="profile profile-four" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile4.png" alt="" />
             </div>
@@ -52,8 +58,11 @@
               <h1>Sean Walsh</h1>
               <p>34 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-five">
+          <div class="profile profile-five" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile5.png" alt="" />
             </div>
@@ -61,8 +70,11 @@
               <h1>Lola Gardner</h1>
               <p>29 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-six hidden">
+          <div class="profile profile-six hidden" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile6.png" alt="" />
             </div>
@@ -70,8 +82,11 @@
               <h1>Nguta Ithya</h1>
               <p>35 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-seven hidden">
+          <div class="profile profile-seven hidden" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile7.png" alt="" />
             </div>
@@ -79,8 +94,11 @@
               <h1>Jane Meldrum</h1>
               <p>21 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-eight hidden">
+          <div class="profile profile-eight hidden" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile8.png" alt="" />
             </div>
@@ -88,8 +106,11 @@
               <h1>Desiree Burch</h1>
               <p>23 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-eight hidden">
+          <div class="profile profile-nine hidden" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile9.png" alt="" />
             </div>
@@ -97,8 +118,11 @@
               <h1>Hayman Andrews</h1>
               <p>28 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
-          <div class="profile profile-eight hidden">
+          <div class="profile profile-ten hidden" onmouseenter="mouseEnterHandler(event)" onmouseleave="mouseLeaveHandler(event)">
             <div class="profile-image">
               <img src="./css/images/profile10.png" alt="" />
             </div>
@@ -106,10 +130,13 @@
               <h1>Ruveni Ellawala</h1>
               <p>24 years</p>
             </div>
+            <div onclick="closeClickHandler(event)" class="close">
+              <span>&#10006</span>
+            </div>
           </div>
         </div>
         <div class="button-section">
-          <button onclick="clickHandler()">Show all</button>
+          <button onclick="clickHandler(event)">Show all</button>
         </div>
       </section>
     </div>
