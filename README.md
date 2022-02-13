@@ -24,7 +24,7 @@ Birthday Reminder using JavaScript Vanilla and HTML/CSS
 ## Demo
 
 Insert gif or link to demo:
-https://thirsty-wing-fe5fbb.netlify.app
+https://festive-haibt-3b5e93.netlify.app
 
 
 ## 🚀 About Me
