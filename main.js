@@ -25,12 +25,20 @@ const clickHandler = () => {
   document.styleSheets[0].cssRules[12].style.setProperty("display", "flex");
 };
 const mouseEnterHandler = (event) => {
-  const element = event.path[0].children[2];
-  element.style.visibility = "visible";
+  if (window.innerWidth >= 570) {
+    const element = event.path[0].children[2];
+    element.style.visibility = "visible";
+  } else {
+    return;
+  }
 };
 const mouseLeaveHandler = (event) => {
-  const element = event.path[0].children[2];
-  element.style.visibility = "hidden";
+  if (window.innerWidth >= 570) {
+    const element = event.path[0].children[2];
+    element.style.visibility = "hidden";
+  } else {
+    return;
+  }
 };
 
 const closeClickHandler = (event) => {
