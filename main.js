@@ -1,3 +1,4 @@
+//farshad
 const counterHandler = () => {
   const profileContainer = document.querySelector(".profile-container");
   const numberProfile = profileContainer.children.length;
