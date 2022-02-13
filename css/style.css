@@ -52,8 +52,8 @@ body {
 }
 
 .profile-container {
-  height: 475px;
-  overflow-y: auto !important;
+  height: 310px;
+  overflow-y: auto;
 }
 .profile-container::-webkit-scrollbar {
   width: 15px;
@@ -118,7 +118,7 @@ body {
   margin-bottom: 5px;
 }
 .profile-title p {
-  font-size: 16px;
+  font-size: 1em;
 
   font-weight: 400;
   line-height: 20px;
@@ -170,7 +170,18 @@ body {
 
 @media screen and (max-width: 570px) {
   .button-section button {
-    padding: 22px 60px;
-    t
-
+    padding: 22px 50px;
+  }
+  .main-section {
+    width: 350px;
+  }
+  .container-title h1 {
+    font-size: 1.5em;
+  }
+  .profile-title h1 {
+    font-size: 0.8em;
+  }
+  .profile-title p {
+    font-size: 0.9em;
+  }
 }
