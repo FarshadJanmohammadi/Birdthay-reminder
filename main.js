@@ -5,6 +5,7 @@ const counterHandler = () => {
   countrer.innerHTML = numberProfile;
   if (numberProfile < 5) {
     document.styleSheets[0].cssRules[6].style.setProperty("height", "auto");
+  } else if (numberProfile == 0) {
   }
   if (numberProfile == 0) {
     document.styleSheets[0].cssRules[21].style.setProperty(
@@ -21,13 +22,17 @@ const counterHandler = () => {
 };
 counterHandler();
 
-const clickHandler = (event) => {
+const clickHandler = () => {
+  console.log("Hello");
+  document.styleSheets[0].cssRules[12].style.setProperty("display", "flex");
   const audioShowAll = new Audio();
   audioShowAll.src = "./css/sounds/clickShowAll.mp3";
   audioShowAll.play();
-  document.styleSheets[0].cssRules[12].style.setProperty("display", "flex");
-  event.srcElement.disabled = true;
 };
+
+const btnShowAll = document.querySelector(".button-section button");
+btnShowAll.addEventListener("click", clickHandler, { once: true });
+
 const mouseEnterHandler = (event) => {
   if (window.innerWidth >= 570) {
     const element = event.path[0].children[2];
@@ -46,8 +51,6 @@ const mouseLeaveHandler = (event) => {
 };
 
 const closeClickHandler = (event) => {
-  console.log(event);
-  document.styleSheets[0].cssRules[12].style.setProperty("display", "flex");
   if (event.target.localName == "span") {
     const audio = new Audio();
     audio.src = "./css/sounds/click.mp3";
@@ -57,4 +60,10 @@ const closeClickHandler = (event) => {
     return;
   }
   counterHandler();
+  const counter = document.querySelector(".profile-container");
+  const profileCounter = counter.children.length;
+  if (profileCounter == 9) {
+    clickHandler();
+    btnShowAll.removeEventListener("click", clickHandler, { once: true });
+  }
 };
