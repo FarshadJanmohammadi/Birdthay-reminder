@@ -23,11 +23,7 @@ const counterHandler = () => {
 counterHandler();
 
 const clickHandler = () => {
-  console.log("Hello");
   document.styleSheets[0].cssRules[12].style.setProperty("display", "flex");
-  const audioShowAll = new Audio();
-  audioShowAll.src = "./css/sounds/clickShowAll.mp3";
-  audioShowAll.play();
 };
 
 const btnShowAll = document.querySelector(".button-section button");
@@ -52,9 +48,6 @@ const mouseLeaveHandler = (event) => {
 
 const closeClickHandler = (event) => {
   if (event.target.localName == "span") {
-    const audio = new Audio();
-    audio.src = "./css/sounds/click.mp3";
-    audio.play();
     event.path[2].remove();
   } else {
     return;
