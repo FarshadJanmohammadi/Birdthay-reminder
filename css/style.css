@@ -35,6 +35,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -177,6 +178,26 @@ body {
   background-image: linear-gradient(to left, #fe69a3, #e56ed2);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+footer p {
+  font-size: 1em;
+  color: white;
+  box-shadow: 2px 2px 8px rgba(11, 11, 11, 0);
+}
+footer p a {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  box-shadow: 2px 2px 8px rgba(11, 11, 11, 0);
+}
+footer p a:hover {
+  color: rgb(17, 135, 231);
+}
 @media screen and (max-width: 570px) {
   .button-section button {
     padding: 22px 50px;
