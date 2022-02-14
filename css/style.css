@@ -216,6 +216,9 @@ footer p a:hover {
   }
   .close {
     visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .close span {
     /* padding: 4px 9px 5px 9px; */
