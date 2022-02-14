@@ -218,6 +218,8 @@ footer p a:hover {
   }
   .close {
     visibility: visible;
-    padding: 3px 9px 5px 9px;
+  }
+  .close span {
+    top: 2px;
   }
 }
