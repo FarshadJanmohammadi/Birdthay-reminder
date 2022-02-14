@@ -144,6 +144,8 @@ body {
 }
 
 .close span {
+  width: 40px;
+  height: 40px;
   font-size: large;
   background-color: rgb(238, 22, 22);
   color: white;
@@ -216,11 +218,5 @@ footer p a:hover {
   }
   .close {
     visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .close span {
-    /* padding: 4px 9px 5px 9px; */
   }
 }
