@@ -218,8 +218,6 @@ footer p a:hover {
   }
   .close {
     visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 5px 9px;
   }
 }
